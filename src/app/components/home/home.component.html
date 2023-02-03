@@ -1,0 +1,956 @@
+<div class="introduction">
+    <div class="introduction-content shadow-2 relative overflow-hidden">
+        <div class="bg-drop bg-primary hidden"></div>
+        <div class="introduction-title">Angular UI Blocks</div>
+        <div class="introduction-subtitle">Powered by PrimeNG</div>
+        <p class="text-900"><strong>400+</strong> ready to use UI blocks to build spectacular applications in no time.</p>
+        <div class="z-3 relative flex flex-nowrap flex-column align-items-center sm:flex-row sm:justify-content-center">
+            <button pButton pRipple label="Browse All" (click)="viewBlocks(application)" class="w-full sm:w-auto font-bold p-3 mb-3 sm:mb-0 sm:mr-3"></button>
+            <button pButton pRipple label="Free Blocks" class="w-full sm:w-auto p-button-outlined font-bold p-3" [routerLink]="['/free']"></button>
+        </div>
+        <div class="video-container mt-5 z-2 relative flex justify-content-center align-items-center">
+            <iframe width="420" height="236" src="https://www.youtube.com/embed/XNRevmRLb70" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen onload="this.classList.add('shadow-6')"></iframe>
+            <div class="introduction-gradient top-50 w-30rem h-20rem bg-primary absolute"></div>
+        </div>
+    </div>
+</div>
+
+<div #application class="block-category-title">Application UI</div>
+<div class="block-category">
+    <div class="block-group">
+        <span class="block-group-title">Application Shells</span>
+        <div class="block-group-content">
+            <div class="grid">
+                <div class="col-12 md:col-3">
+                    <a [routerLink]="['/application/stackedlayout']">
+                        <img [src]="appConfig.dark ? 'assets/images/placeholders/placeholder-stackedlayout-dark.svg' : 'assets/images/placeholders/placeholder-stackedlayout.svg'" class="block-placeholder" alt="Stacked Layout">
+                    </a>
+                    <div class="flex align-items-start justify-content-between">
+                        <div>
+                            <span class="block-name">Stacked Layout</span>
+                            <span class="block-count">7 Blocks</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 md:col-3">
+                    <a [routerLink]="['/application/sidebarlayout']">
+                        <img [src]="appConfig.dark ? 'assets/images/placeholders/placeholder-sidebarlayouts-dark.svg' : 'assets/images/placeholders/placeholder-sidebarlayouts.svg'" class="block-placeholder" alt="Sidebar Layout">
+                    </a>
+                    <div class="flex align-items-start justify-content-between">
+                        <div>
+                            <span class="block-name">Sidebar Layout</span>
+                            <span class="block-count">13 Blocks</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 md:col-3">
+                    <a [routerLink]="['/application/multicolumnlayout']">
+                        <img [src]="appConfig.dark ? 'assets/images/placeholders/placeholder-multicolumnlayouts-dark.svg' : 'assets/images/placeholders/placeholder-multicolumnlayouts.svg'" class="block-placeholder" alt="Multi-Column Layout">
+                    </a>
+                    <div class="flex align-items-start justify-content-between">
+                        <div>
+                            <span class="block-name">Multi Column Layout</span>
+                            <span class="block-count">3 Blocks</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="block-group">
+        <span class="block-group-title">Samples</span>
+        <div class="block-group-content">
+            <div class="grid">
+                <div class="col-12 md:col-3">
+                    <a [routerLink]="['/application/dashboard']">
+                        <img [src]="appConfig.dark ? 'assets/images/placeholders/placeholder-dashboard-dark.svg' : 'assets/images/placeholders/placeholder-dashboard.svg'" class="block-placeholder" alt="Dashboard">
+                    </a>
+                    <div class="flex align-items-start justify-content-between">
+                        <div>
+                            <span class="block-name">Dashboard</span>
+                            <span class="block-count">3 Blocks</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 md:col-3">
+                    <a [routerLink]="['/application/detailscreen']">
+                        <img [src]="appConfig.dark ? 'assets/images/placeholders/placeholder-detailscreens-dark.svg' : 'assets/images/placeholders/placeholder-detailscreens.svg'" class="block-placeholder" alt="Detail">
+                    </a>
+                    <div class="flex align-items-start justify-content-between">
+                        <div>
+                            <span class="block-name">Detail</span>
+                            <span class="block-count">2 Blocks</span>
+                        </div>
+                        <span class="badge-new">1 New</span>
+                    </div>
+                </div>
+                <div class="col-12 md:col-3">
+                    <a [routerLink]="['/application/settingscreen']">
+                        <img [src]="appConfig.dark ? 'assets/images/placeholders/placeholder-settingscreens-dark.svg' : 'assets/images/placeholders/placeholder-settingscreens.svg'" class="block-placeholder" alt="Settings">
+                    </a>
+                    <div class="flex align-items-start justify-content-between">
+                        <div>
+                            <span class="block-name">Setting</span>
+                            <span class="block-count">3 Blocks</span>
+                        </div>
+                        <span class="badge-new">2 New</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="block-group">
+        <span class="block-group-title">Headings</span>
+        <div class="block-group-content">
+            <div class="grid">
+                <div class="col-12 md:col-3">
+                    <a [routerLink]="['/application/pageheading']">
+                        <img [src]="appConfig.dark ? 'assets/images/placeholders/placeholder-pageheadings-dark.svg' : 'assets/images/placeholders/placeholder-pageheadings.svg'" class="block-placeholder" alt="Page Heading">
+                    </a>
+                    <div class="flex align-items-start justify-content-between">
+                        <div>
+                            <span class="block-name">Page Heading</span>
+                            <span class="block-count">14 Blocks</span>
+                        </div>
+                        <span class="badge-new">1 New</span>
+                    </div>
+                </div>
+                <div class="col-12 md:col-3">
+                    <a [routerLink]="['/application/cardheading']">
+                        <img [src]="appConfig.dark ? 'assets/images/placeholders/placeholder-cardheadings-dark.svg' : 'assets/images/placeholders/placeholder-cardheadings.svg'" class="block-placeholder" alt="Card Heading">
+                    </a>
+                    <div class="flex align-items-start justify-content-between">
+                        <div>
+                            <span class="block-name">Card Heading</span>
+                            <span class="block-count">7 Blocks</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 md:col-3">
+                    <a [routerLink]="['/application/sectionheading']">
+                        <img [src]="appConfig.dark ? 'assets/images/placeholders/placeholder-sectionheadings-dark.svg' : 'assets/images/placeholders/placeholder-sectionheadings.svg'" class="block-placeholder" alt="Section Heading">
+                    </a>
+                    <div class="flex align-items-start justify-content-between">
+                        <div>
+                            <span class="block-name">Section Heading</span>
+                            <span class="block-count">8 Blocks</span>
+                        </div>
+                        <span class="badge-new">2 New</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="block-group">
+        <span class="block-group-title">Data Display</span>
+        <div class="block-group-content">
+            <div class="grid">
+                <div class="col-12 md:col-3">
+                    <a [routerLink]="['/application/descriptionlist']">
+                        <img [src]="appConfig.dark ? 'assets/images/placeholders/placeholder-descriptionlist-dark.svg' : 'assets/images/placeholders/placeholder-descriptionlist.svg'" class="block-placeholder" alt="Description List">
+                    </a>
+                    <div class="flex align-items-start justify-content-between">
+                        <div>
+                            <span class="block-name">Description List</span>
+                            <span class="block-count">4 Blocks</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 md:col-3">
+                    <a [routerLink]="['/application/stats']">
+                        <img [src]="appConfig.dark ? 'assets/images/placeholders/placeholder-stats-data-dark.svg' : 'assets/images/placeholders/placeholder-stats-data.svg'" class="block-placeholder" alt="Stats">
+                    </a>
+                    <div class="flex align-items-start justify-content-between">
+                        <div>
+                            <span class="block-name">Stats</span>
+                            <span class="block-count">11 Blocks</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="block-group">
+        <span class="block-group-title">Lists</span>
+        <div class="block-group-content">
+            <div class="grid">
+                <div class="col-12 md:col-3">
+                    <a [routerLink]="['/application/stackedlist']">
+                        <img [src]="appConfig.dark ? 'assets/images/placeholders/placeholder-stackedlists-dark.svg' : 'assets/images/placeholders/placeholder-stackedlists.svg'" class="block-placeholder" alt="Stacked List">
+                    </a>
+                    <div class="flex align-items-start justify-content-between">
+                        <div>
+                            <span class="block-name">Stacked List</span>
+                            <span class="block-count">6 Blocks</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 md:col-3">
+                    <a [routerLink]="['/application/gridlist']">
+                        <img [src]="appConfig.dark ? 'assets/images/placeholders/placeholder-gridlists-dark.svg' : 'assets/images/placeholders/placeholder-gridlists.svg'" class="block-placeholder" alt="Grid List">
+                    </a>
+                    <div class="flex align-items-start justify-content-between">
+                        <div>
+                            <span class="block-name">Grid List</span>
+                            <span class="block-count">9 Blocks</span>
+                        </div>
+                        <span class="badge-new">1 New</span>
+                    </div>
+                </div>
+                <div class="col-12 md:col-3">
+                    <a [routerLink]="['/application/feed']">
+                        <img [src]="appConfig.dark ? 'assets/images/placeholders/placeholder-feeds-dark.svg' : 'assets/images/placeholders/placeholder-feeds.svg'" class="block-placeholder" alt="Feed">
+                    </a>
+                    <div class="flex align-items-start justify-content-between">
+                        <div>
+                            <span class="block-name">Feed</span>
+                            <span class="block-count">3 Blocks</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="block-group">
+        <span class="block-group-title">Forms</span>
+        <div class="block-group-content">
+            <div class="grid">
+                <div class="col-12 md:col-3">
+                    <a [routerLink]="['/application/formlayout']">
+                        <img [src]="appConfig.dark ? 'assets/images/placeholders/placeholder-formlayouts-dark.svg' : 'assets/images/placeholders/placeholder-formlayouts.svg'" class="block-placeholder" alt="Form Layout">
+                    </a>
+                    <div class="flex align-items-start justify-content-between">
+                        <div>
+                            <span class="block-name">Form Layout</span>
+                            <span class="block-count">4 Blocks</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 md:col-3">
+                    <a [routerLink]="['/application/signin']">
+                        <img [src]="appConfig.dark ? 'assets/images/placeholders/placeholder-signin-dark.svg' : 'assets/images/placeholders/placeholder-signin.svg'" class="block-placeholder" alt="Sign-in">
+                    </a>
+                    <div class="flex align-items-start justify-content-between">
+                        <div>
+                            <span class="block-name">Sign-in</span>
+                            <span class="block-count">5 Blocks</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 md:col-3">
+                    <a [routerLink]="['/application/radiogroup']">
+                        <img [src]="appConfig.dark ? 'assets/images/placeholders/placeholder-radiogroups-dark.svg' : 'assets/images/placeholders/placeholder-radiogroups.svg'" class="block-placeholder" alt="Radio Group">
+                    </a>
+                    <div class="flex align-items-start justify-content-between">
+                        <div>
+                            <span class="block-name">Radio Group</span>
+                            <span class="block-count">7 Blocks</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 md:col-3">
+                    <a [routerLink]="['/application/actionpanel']">
+                        <img [src]="appConfig.dark ? 'assets/images/placeholders/placeholder-actionpanels-dark.svg' : 'assets/images/placeholders/placeholder-actionpanels.svg'" class="block-placeholder" alt="Action Panel">
+                    </a>
+                    <div class="flex align-items-start justify-content-between">
+                        <div>
+                            <span class="block-name">Action Panel</span>
+                            <span class="block-count">7 Blocks</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="block-group">
+        <span class="block-group-title">Feedback</span>
+        <div class="block-group-content">
+            <div class="grid">
+                <div class="col-12 md:col-3">
+                    <a [routerLink]="['/application/alert']">
+                        <img [src]="appConfig.dark ? 'assets/images/placeholders/placeholder-alert-dark.svg' : 'assets/images/placeholders/placeholder-alert.svg'" class="block-placeholder" alt="Alert">
+                    </a>
+                    <div class="flex align-items-start justify-content-between">
+                        <div>
+                            <span class="block-name">Alert</span>
+                            <span class="block-count">4 Blocks</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="block-group">
+        <span class="block-group-title">Navigation</span>
+        <div class="block-group-content">
+            <div class="grid">
+                <div class="col-12 md:col-3">
+                    <a [routerLink]="['/application/navbar']">
+                        <img [src]="appConfig.dark ? 'assets/images/placeholders/placeholder-app-navbar-dark.svg' : 'assets/images/placeholders/placeholder-app-navbar.svg'" class="block-placeholder" alt="Navbar">
+                    </a>
+                    <div class="flex align-items-start justify-content-between">
+                        <div>
+                            <span class="block-name">Navbar</span>
+                            <span class="block-count">12 Blocks</span>
+                        </div>
+                        <span class="badge-new">1 New</span>
+                    </div>
+                </div>
+                <div class="col-12 md:col-3">
+                    <a [routerLink]="['/application/tabs']">
+                        <img [src]="appConfig.dark ? 'assets/images/placeholders/placeholder-tabs-dark.svg' : 'assets/images/placeholders/placeholder-tabs.svg'" class="block-placeholder" alt="Tabs">
+                    </a>
+                    <div class="flex align-items-start justify-content-between">
+                        <div>
+                            <span class="block-name">Tabs</span>
+                            <span class="block-count">6 Blocks</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 md:col-3">
+                    <a [routerLink]="['/application/verticalnav']">
+                        <img [src]="appConfig.dark ? 'assets/images/placeholders/placeholder-verticalnavigation-dark.svg' : 'assets/images/placeholders/placeholder-verticalnavigation.svg'" class="block-placeholder" alt="Vertical Navigation">
+                    </a>
+                    <div class="flex align-items-start justify-content-between">
+                        <div>
+                            <span class="block-name">Vertical Navigation</span>
+                            <span class="block-count">7 Blocks</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 md:col-3">
+                    <a [routerLink]="['/application/sidebarnav']">
+                        <img [src]="appConfig.dark ? 'assets/images/placeholders/placeholder-sidebarnavigation-dark.svg' : 'assets/images/placeholders/placeholder-sidebarnavigation.svg'" class="block-placeholder" alt="Sidebar Navigation">
+                    </a>
+                    <div class="flex align-items-start justify-content-between">
+                        <div>
+                            <span class="block-name">Sidebar Navigation</span>
+                            <span class="block-count">5 Blocks</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 md:col-3">
+                    <a [routerLink]="['/application/breadcrumb']">
+                        <img [src]="appConfig.dark ? 'assets/images/placeholders/placeholder-breadcrumb-dark.svg' : 'assets/images/placeholders/placeholder-breadcrumb.svg'" class="block-placeholder" alt="Breadcrumb">
+                    </a>
+                    <div class="flex align-items-start justify-content-between">
+                        <div>
+                            <span class="block-name">Breadcrumbs</span>
+                            <span class="block-count">5 Blocks</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 md:col-3">
+                    <a [routerLink]="['/application/steps']">
+                        <img [src]="appConfig.dark ? 'assets/images/placeholders/placeholder-steps-dark.svg' : 'assets/images/placeholders/placeholder-steps.svg'" class="block-placeholder" alt="Steps">
+                    </a>
+                    <div class="flex align-items-start justify-content-between">
+                        <div>
+                            <span class="block-name">Steps</span>
+                            <span class="block-count">7 Blocks</span>
+                        </div>
+                        <span class="badge-new">1 New</span>
+                    </div>
+                </div>
+                <div class="col-12 md:col-3">
+                    <a [routerLink]="['/application/footer']">
+                        <img [src]="appConfig.dark ? 'assets/images/placeholders/placeholder-footers-appui-dark.svg' : 'assets/images/placeholders/placeholder-footers-appui.svg'" class="block-placeholder" alt="Footer">
+                    </a>
+                    <div class="flex align-items-start justify-content-between">
+                        <div>
+                            <span class="block-name">Footer</span>
+                            <span class="block-count">3 Blocks</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="block-group">
+        <span class="block-group-title">Overlays</span>
+        <div class="block-group-content">
+            <div class="grid">
+                <div class="col-12 md:col-3">
+                    <a [routerLink]="['/application/dialog']">
+                        <img [src]="appConfig.dark ? 'assets/images/placeholders/placeholder-dialog-dark.svg' : 'assets/images/placeholders/placeholder-dialog.svg'" class="block-placeholder" alt="Modal">
+                    </a>
+                    <div class="flex align-items-start justify-content-between">
+                        <div>
+                            <span class="block-name">Dialog</span>
+                            <span class="block-count">8 Blocks</span>
+                        </div>
+                        <span class="badge-new">5 New</span>
+                    </div>
+                </div>
+                <div class="col-12 md:col-3">
+                    <a [routerLink]="['/application/slideover']">
+                        <img [src]="appConfig.dark ? 'assets/images/placeholders/placeholder-slideovers-dark.svg' : 'assets/images/placeholders/placeholder-slideovers.svg'" class="block-placeholder" alt="Slide-over">
+                    </a>
+                    <div class="flex align-items-start justify-content-between">
+                        <div>
+                            <span class="block-name">SlideOver</span>
+                            <span class="block-count">11 Blocks</span>
+                        </div>
+                        <span class="badge-new">1 New</span>
+                    </div>
+                </div>
+                <div class="col-12 md:col-3">
+                    <a [routerLink]="['/application/notification']">
+                        <img [src]="appConfig.dark ? 'assets/images/placeholders/placeholder-notification-dark.svg' : 'assets/images/placeholders/placeholder-notification.svg'" class="block-placeholder" alt="Notification">
+                    </a>
+                    <div class="flex align-items-start justify-content-between">
+                        <div>
+                            <span class="block-name">Notification</span>
+                            <span class="block-count">10 Blocks</span>
+                        </div>
+                        <span class="badge-new">3 New</span>
+                    </div>
+                </div>
+                <div class="col-12 md:col-3">
+                    <a [routerLink]="['/application/commandmenu']">
+                        <img [src]="appConfig.dark ? 'assets/images/placeholders/placeholder-commandmenu-dark.svg' : 'assets/images/placeholders/placeholder-commandmenu.svg'" class="block-placeholder" alt="Notification">
+                    </a>
+                    <div class="flex align-items-start justify-content-between">
+                        <div>
+                            <span class="block-name">Command Menu</span>
+                            <span class="block-count">6 Blocks</span>
+                        </div>
+                        <span class="badge-new">6 New</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="block-group">
+        <span class="block-group-title">Pages</span>
+        <div class="block-group-content">
+            <div class="grid">
+                <div class="col-12 md:col-3">
+                    <a [routerLink]="['/application/pagenotfound']">
+                        <img [src]="appConfig.dark ? 'assets/images/placeholders/placeholder-pagenotfound-dark.svg' : 'assets/images/placeholders/placeholder-pagenotfound.svg'" class="block-placeholder" alt="Container">
+                    </a>
+                    <div class="flex align-items-start justify-content-between">
+                        <div>
+                            <span class="block-name">Page Not Found</span>
+                            <span class="block-count">4 Blocks</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="block-group">
+        <span class="block-group-title">Layout</span>
+        <div class="block-group-content">
+            <div class="grid">
+                <div class="col-12 md:col-3">
+                    <a [routerLink]="['/application/container']">
+                        <img [src]="appConfig.dark ? 'assets/images/placeholders/placeholder-containers-dark.svg' : 'assets/images/placeholders/placeholder-containers.svg'" class="block-placeholder" alt="Container">
+                    </a>
+                    <div class="flex align-items-start justify-content-between">
+                        <div>
+                            <span class="block-name">Container</span>
+                            <span class="block-count">5 Blocks</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 md:col-3">
+                    <a [routerLink]="['/application/panel']">
+                        <img [src]="appConfig.dark ? 'assets/images/placeholders/placeholder-panels-dark.svg' : 'assets/images/placeholders/placeholder-panels.svg'" class="block-placeholder" alt="Panel">
+                    </a>
+                    <div class="flex align-items-start justify-content-between">
+                        <div>
+                            <span class="block-name">Panel</span>
+                            <span class="block-count">4 Blocks</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 md:col-3">
+                    <a [routerLink]="['/application/listcontainer']">
+                        <img [src]="appConfig.dark ? 'assets/images/placeholders/placeholder-listcontainers-dark.svg' : 'assets/images/placeholders/placeholder-listcontainers.svg'" class="block-placeholder" alt="List Container">
+                    </a>
+                    <div class="flex align-items-start justify-content-between">
+                        <div>
+                            <span class="block-name">List Container</span>
+                            <span class="block-count">3 Blocks</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 md:col-3">
+                    <a [routerLink]="['/application/divider']">
+                        <img [src]="appConfig.dark ? 'assets/images/placeholders/placeholder-dividers-dark.svg' : 'assets/images/placeholders/placeholder-dividers.svg'" class="block-placeholder" alt="Dividers">
+                    </a>
+                    <div class="flex align-items-start justify-content-between">
+                        <div>
+                            <span class="block-name">Divider</span>
+                            <span class="block-count">6 Blocks</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="block-category-title">Marketing</div>
+<div class="block-category">
+    <div class="block-group">
+        <span class="block-group-title">Page Sections</span>
+        <div class="block-group-content">
+            <div class="grid">
+                <div class="col-12 md:col-3">
+                    <a [routerLink]="['/marketing/hero']">
+                        <img [src]="appConfig.dark ? 'assets/images/placeholders/placeholder-hero-dark.svg' : 'assets/images/placeholders/placeholder-hero.svg'" class="block-placeholder" alt="Hero">
+                    </a>
+                    <div class="flex align-items-start justify-content-between">
+                        <div>
+                            <span class="block-name">Hero</span>
+                            <span class="block-count">8 Blocks</span>
+                        </div>
+                        <span class="badge-new">2 New</span>
+                    </div>
+                </div>
+                <div class="col-12 md:col-3">
+                    <a [routerLink]="['/marketing/feature']">
+                        <img [src]="appConfig.dark ? 'assets/images/placeholders/placeholder-feature-dark.svg' : 'assets/images/placeholders/placeholder-feature.svg'" class="block-placeholder" alt="Feature">
+                    </a>
+                    <div class="flex align-items-start justify-content-between">
+                        <div>
+                            <span class="block-name">Feature</span>
+                            <span class="block-count">14 Blocks</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 md:col-3">
+                    <a [routerLink]="['/marketing/cta']">
+                        <img [src]="appConfig.dark ? 'assets/images/placeholders/placeholder-cta-dark.svg' : 'assets/images/placeholders/placeholder-cta.svg'" class="block-placeholder" alt="CTA">
+                    </a>
+                    <div class="flex align-items-start justify-content-between">
+                        <div>
+                            <span class="block-name">Call to Action</span>
+                            <span class="block-count">12 Blocks</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 md:col-3">
+                    <a [routerLink]="['/marketing/pricing']">
+                        <img [src]="appConfig.dark ? 'assets/images/placeholders/placeholder-pricing-dark.svg' : 'assets/images/placeholders/placeholder-pricing.svg'" class="block-placeholder" alt="Pricing">
+                    </a>
+                    <div class="flex align-items-start justify-content-between">
+                        <div>
+                            <span class="block-name">Pricing</span>
+                            <span class="block-count">7 Blocks</span>
+                        </div>
+                        <span class="badge-new">1 New</span>
+                    </div>
+                </div>
+                <div class="col-12 md:col-3">
+                    <a [routerLink]="['/marketing/faq']">
+                        <img [src]="appConfig.dark ? 'assets/images/placeholders/placeholder-faq-dark.svg' : 'assets/images/placeholders/placeholder-faq.svg'" class="block-placeholder" alt="FAQ">
+                    </a>
+                    <div class="flex align-items-start justify-content-between">
+                        <div>
+                            <span class="block-name">FAQ</span>
+                            <span class="block-count">5 Blocks</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 md:col-3">
+                    <a [routerLink]="['/marketing/newsletter']">
+                        <img [src]="appConfig.dark ? 'assets/images/placeholders/placeholder-newsletter-dark.svg' : 'assets/images/placeholders/placeholder-newsletter.svg'" class="block-placeholder" alt="Newsletter">
+                    </a>
+                    <div class="flex align-items-start justify-content-between">
+                        <div>
+                            <span class="block-name">Newsletter</span>
+                            <span class="block-count">4 Blocks</span>
+                        </div>
+                        <span class="badge-new">1 New</span>
+                    </div>
+                </div>
+                <div class="col-12 md:col-3">
+                    <a [routerLink]="['/marketing/stats']">
+                        <img [src]="appConfig.dark ? 'assets/images/placeholders/placeholder-stats-dark.svg' : 'assets/images/placeholders/placeholder-stats.svg'" class="block-placeholder" alt="Newsletter">
+                    </a>
+                    <div class="flex align-items-start justify-content-between">
+                        <div>
+                            <span class="block-name">Stats</span>
+                            <span class="block-count">6 Blocks</span>
+                        </div>
+                        <span class="badge-new">1 New</span>
+                    </div>
+                </div>
+                <div class="col-12 md:col-3">
+                    <a [routerLink]="['/marketing/testimonials']">
+                        <img [src]="appConfig.dark ? 'assets/images/placeholders/placeholder-testimonials-dark.svg' : 'assets/images/placeholders/placeholder-testimonials.svg'" class="block-placeholder" alt="Testimonial">
+                    </a>
+                    <div class="flex align-items-start justify-content-between">
+                        <div>
+                            <span class="block-name">Testimonial</span>
+                            <span class="block-count">7 Blocks</span>
+                        </div>
+                        <span class="badge-new">2 New</span>
+                    </div>
+                </div>
+                <div class="col-12 md:col-3">
+                    <a [routerLink]="['/marketing/blog']">
+                        <img [src]="appConfig.dark ? 'assets/images/placeholders/placeholder-blogsections-dark.svg' : 'assets/images/placeholders/placeholder-blogsections.svg'" class="block-placeholder" alt="Blog">
+                    </a>
+                    <div class="flex align-items-start justify-content-between">
+                        <div>
+                            <span class="block-name">Blog</span>
+                            <span class="block-count">7 Blocks</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 md:col-3">
+                    <a [routerLink]="['/marketing/contact']">
+                        <img [src]="appConfig.dark ? 'assets/images/placeholders/placeholder-contactsections-dark.svg' : 'assets/images/placeholders/placeholder-contactsections.svg'" class="block-placeholder" alt="Contact">
+                    </a>
+                    <div class="flex align-items-start justify-content-between">
+                        <div>
+                            <span class="block-name">Contact</span>
+                            <span class="block-count">3 Blocks</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 md:col-3">
+                    <a [routerLink]="['/marketing/team']">
+                        <img [src]="appConfig.dark ? 'assets/images/placeholders/placeholder-teamsections-dark.svg' : 'assets/images/placeholders/placeholder-teamsections.svg'" class="block-placeholder" alt="Team">
+                    </a>
+                    <div class="flex align-items-start justify-content-between">
+                        <div>
+                            <span class="block-name">Team</span>
+                            <span class="block-count">6 Blocks</span>
+                        </div>
+                        <span class="badge-new">1 New</span>
+                    </div>
+                </div>
+                <div class="col-12 md:col-3">
+                    <a [routerLink]="['/marketing/content']">
+                        <img [src]="appConfig.dark ? 'assets/images/placeholders/placeholder-contentsections-dark.svg' : 'assets/images/placeholders/placeholder-contentsections.svg'" class="block-placeholder" alt="Content">
+                    </a>
+                    <div class="flex align-items-start justify-content-between">
+                        <div>
+                            <span class="block-name">Content</span>
+                            <span class="block-count">3 Blocks</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 md:col-3">
+                    <a [routerLink]="['/marketing/footer']">
+                        <img [src]="appConfig.dark ? 'assets/images/placeholders/placeholder-footer-dark.svg' : 'assets/images/placeholders/placeholder-footer.svg'" class="block-placeholder" alt="Footer">
+                    </a>
+                    <div class="flex align-items-start justify-content-between">
+                        <div>
+                            <span class="block-name">Footer</span>
+                            <span class="block-count">7 Blocks</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 md:col-3">
+                    <a [routerLink]="['/marketing/logocloud']">
+                        <img [src]="appConfig.dark ? 'assets/images/placeholders/placeholder-logocloud-dark.svg' : 'assets/images/placeholders/placeholder-logocloud.svg'" class="block-placeholder" alt="Logo Cloud">
+                    </a>
+                    <div class="flex align-items-start justify-content-between">
+                        <div>
+                            <span class="block-name">Logo Cloud</span>
+                            <span class="block-count">6 Blocks</span>
+                        </div>
+                        <span class="badge-new">1 New</span>
+                    </div>
+                </div>
+                <div class="col-12 md:col-3">
+                    <a [routerLink]="['/marketing/navbar']">
+                        <img [src]="appConfig.dark ? 'assets/images/placeholders/placeholder-marketing-navbar-dark.svg' : 'assets/images/placeholders/placeholder-marketing-navbar.svg'" class="block-placeholder" alt="NavBar">
+                    </a>
+                    <div class="flex align-items-start justify-content-between">
+                        <div>
+                            <span class="block-name">Navbar</span>
+                            <span class="block-count">7 Blocks</span>
+                        </div>
+                        <span class="badge-new">1 New</span>
+                    </div>
+                </div>
+                <div class="col-12 md:col-3">
+                    <a [routerLink]="['/marketing/banner']">
+                        <img [src]="appConfig.dark ? 'assets/images/placeholders/placeholder-banner-dark.svg' : 'assets/images/placeholders/placeholder-banner.svg'" class="block-placeholder" alt="Banners">
+                    </a>
+                    <div class="flex align-items-start justify-content-between">
+                        <div>
+                            <span class="block-name">Banner</span>
+                            <span class="block-count">3 Blocks</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="block-group">
+        <span class="block-group-title">Samples</span>
+        <div class="block-group-content">
+            <div class="grid">
+                <div class="col-12 md:col-3">
+                    <a [routerLink]="['/marketing/landing']">
+                        <img [src]="appConfig.dark ? 'assets/images/placeholders/placeholder-landingscreens-dark.svg' : 'assets/images/placeholders/placeholder-landingscreens.svg'" class="block-placeholder" alt="Landing">
+                    </a>
+                    <div class="flex align-items-start justify-content-between">
+                        <div>
+                            <span class="block-name">Landing</span>
+                            <span class="block-count">2 Blocks</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="block-category-title">E-Commerce</div>
+<div class="block-category">
+    <div class="block-group">
+        <span class="block-group-title">Blocks</span>
+        <div class="block-group-content">
+            <div class="grid">
+                <div class="col-12 md:col-3">
+                    <a [routerLink]="['/ecommerce/productoverview']">
+                        <img [src]="appConfig.dark ? 'assets/images/placeholders/placeholder-productoverviews-dark.svg' : 'assets/images/placeholders/placeholder-productoverviews.svg'" class="block-placeholder" alt="Product Overview">
+                    </a>
+                    <div class="flex align-items-start justify-content-between">
+                        <div>
+                            <span class="block-name">Product Overview</span>
+                            <span class="block-count">4 Blocks</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 md:col-3">
+                    <a [routerLink]="['/ecommerce/productlist']">
+                        <img [src]="appConfig.dark ? 'assets/images/placeholders/placeholder-productlists-dark.svg' : 'assets/images/placeholders/placeholder-productlists.svg'" class="block-placeholder" alt="Product Overview">
+                    </a>
+                    <div class="flex align-items-start justify-content-between">
+                        <div>
+                            <span class="block-name">Product List</span>
+                            <span class="block-count">9 Blocks</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 md:col-3">
+                    <a [routerLink]="['/ecommerce/categorypreview']">
+                        <img [src]="appConfig.dark ? 'assets/images/placeholders/placeholder-categorypreviews-dark.svg' : 'assets/images/placeholders/placeholder-categorypreviews.svg'" class="block-placeholder" alt="Product Overview">
+                    </a>
+                    <div class="flex align-items-start justify-content-between">
+                        <div>
+                            <span class="block-name">Category Preview</span>
+                            <span class="block-count">7 Blocks</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 md:col-3">
+                    <a [routerLink]="['/ecommerce/shoppingcart']">
+                        <img [src]="appConfig.dark ? 'assets/images/placeholders/placeholder-shoppingcarts-dark.svg' : 'assets/images/placeholders/placeholder-shoppingcarts.svg'" class="block-placeholder" alt="Product Overview">
+                    </a>
+                    <div class="flex align-items-start justify-content-between">
+                        <div>
+                            <span class="block-name">Shopping Cart</span>
+                            <span class="block-count">5 Blocks</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 md:col-3">
+                    <a [routerLink]="['/ecommerce/categoryfilter']">
+                        <img [src]="appConfig.dark ? 'assets/images/placeholders/placeholder-categoryfilters-dark.svg' : 'assets/images/placeholders/placeholder-categoryfilters.svg'" class="block-placeholder" alt="Product Overview">
+                    </a>
+                    <div class="flex align-items-start justify-content-between">
+                        <div>
+                            <span class="block-name">Category Filter</span>
+                            <span class="block-count">3 Blocks</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 md:col-3">
+                    <a [routerLink]="['/ecommerce/productquickview']">
+                        <img [src]="appConfig.dark ? 'assets/images/placeholders/placeholder-productquickviews-dark.svg' : 'assets/images/placeholders/placeholder-productquickviews.svg'" class="block-placeholder" alt="Product Overview">
+                    </a>
+                    <div class="flex align-items-start justify-content-between">
+                        <div>
+                            <span class="block-name">Product Quickview</span>
+                            <span class="block-count">2 Blocks</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 md:col-3">
+                    <a [routerLink]="['/ecommerce/productfeature']">
+                        <img [src]="appConfig.dark ? 'assets/images/placeholders/placeholder-productfeatures-dark.svg' : 'assets/images/placeholders/placeholder-productfeatures.svg'" class="block-placeholder" alt="Product Overview">
+                    </a>
+                    <div class="flex align-items-start justify-content-between">
+                        <div>
+                            <span class="block-name">Product Feature</span>
+                            <span class="block-count">7 Blocks</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 md:col-3">
+                    <a [routerLink]="['/ecommerce/storenavigation']">
+                        <img [src]="appConfig.dark ? 'assets/images/placeholders/placeholder-storenavigation-dark.svg' : 'assets/images/placeholders/placeholder-storenavigation.svg'" class="block-placeholder" alt="Product Overview">
+                    </a>
+                    <div class="flex align-items-start justify-content-between">
+                        <div>
+                            <span class="block-name">Store Navigation</span>
+                            <span class="block-count">3 Blocks</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 md:col-3">
+                    <a [routerLink]="['/ecommerce/promosection']">
+                        <img [src]="appConfig.dark ? 'assets/images/placeholders/placeholder-promosections-dark.svg' : 'assets/images/placeholders/placeholder-promosections.svg'" class="block-placeholder" alt="Product Overview">
+                    </a>
+                    <div class="flex align-items-start justify-content-between">
+                        <div>
+                            <span class="block-name">Promo Section</span>
+                            <span class="block-count">6 Blocks</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 md:col-3">
+                    <a [routerLink]="['/ecommerce/checkoutform']">
+                        <img [src]="appConfig.dark ? 'assets/images/placeholders/placeholder-checkoutforms-dark.svg' : 'assets/images/placeholders/placeholder-checkoutforms.svg'" class="block-placeholder" alt="Product Overview">
+                    </a>
+                    <div class="flex align-items-start justify-content-between">
+                        <div>
+                            <span class="block-name">Checkout Form</span>
+                            <span class="block-count">3 Blocks</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 md:col-3">
+                    <a [routerLink]="['/ecommerce/review']">
+                        <img [src]="appConfig.dark ? 'assets/images/placeholders/placeholder-reviews-dark.svg' : 'assets/images/placeholders/placeholder-reviews.svg'" class="block-placeholder" alt="Product Overview">
+                    </a>
+                    <div class="flex align-items-start justify-content-between">
+                        <div>
+                            <span class="block-name">Review</span>
+                            <span class="block-count">4 Blocks</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 md:col-3">
+                    <a [routerLink]="['/ecommerce/ordersummary']">
+                        <img [src]="appConfig.dark ? 'assets/images/placeholders/placeholder-ordersummaries-dark.svg' : 'assets/images/placeholders/placeholder-ordersummaries.svg'" class="block-placeholder" alt="Product Overview">
+                    </a>
+                    <div class="flex align-items-start justify-content-between">
+                        <div>
+                            <span class="block-name">Order Summary</span>
+                            <span class="block-count">3 Blocks</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 md:col-3">
+                    <a [routerLink]="['/ecommerce/orderhistory']">
+                        <img [src]="appConfig.dark ? 'assets/images/placeholders/placeholder-orderhistory-dark.svg' : 'assets/images/placeholders/placeholder-orderhistory.svg'" class="block-placeholder" alt="Product Overview">
+                    </a>
+                    <div class="flex align-items-start justify-content-between">
+                        <div>
+                            <span class="block-name">Order History</span>
+                            <span class="block-count">1 Block</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 md:col-3">
+                    <a [routerLink]="['/ecommerce/incentive']">
+                        <img [src]="appConfig.dark ? 'assets/images/placeholders/placeholder-incentives-dark.svg' : 'assets/images/placeholders/placeholder-incentives.svg'" class="block-placeholder" alt="Product Overview">
+                    </a>
+                    <div class="flex align-items-start justify-content-between">
+                        <div>
+                            <span class="block-name">Incentive</span>
+                            <span class="block-count">4 Blocks</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="block-group">
+        <span class="block-group-title">Page Samples</span>
+        <div class="block-group-content">
+            <div class="grid">
+                <div class="col-12 md:col-3">
+                    <a [routerLink]="['/ecommerce/storefront']">
+                        <img [src]="appConfig.dark ? 'assets/images/placeholders/placeholder-storefrontpages-dark.svg' : 'assets/images/placeholders/placeholder-storefrontpages.svg'" class="block-placeholder" alt="Store Front">
+                    </a>
+                    <div class="flex align-items-start justify-content-between">
+                        <div>
+                            <span class="block-name">Storefront</span>
+                            <span class="block-count">2 Blocks</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 md:col-3">
+                    <a [routerLink]="['/ecommerce/productpage']">
+                        <img [src]="appConfig.dark ? 'assets/images/placeholders/placeholder-productpages-dark.svg' : 'assets/images/placeholders/placeholder-productpages.svg'" class="block-placeholder" alt="Store Front">
+                    </a>
+                    <div class="flex align-items-start justify-content-between">
+                        <div>
+                            <span class="block-name">Product Page</span>
+                            <span class="block-count">1 Block</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 md:col-3">
+                    <a [routerLink]="['/ecommerce/categorypage']">
+                        <img [src]="appConfig.dark ? 'assets/images/placeholders/placeholder-categorypages-dark.svg' : 'assets/images/placeholders/placeholder-categorypages.svg'" class="block-placeholder" alt="Store Front">
+                    </a>
+                    <div class="flex align-items-start justify-content-between">
+                        <div>
+                            <span class="block-name">Category Page</span>
+                            <span class="block-count">1 Block</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 md:col-3">
+                    <a [routerLink]="['/ecommerce/shoppingcartpage']">
+                        <img [src]="appConfig.dark ? 'assets/images/placeholders/placeholder-shoppingcarts-dark.svg' : 'assets/images/placeholders/placeholder-shoppingcarts.svg'" class="block-placeholder" alt="Store Front">
+                    </a>
+                    <div class="flex align-items-start justify-content-between">
+                        <div>
+                            <span class="block-name">Shopping Cart Page</span>
+                            <span class="block-count">1 Block</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 md:col-3">
+                    <a [routerLink]="['/ecommerce/checkoutpage']">
+                        <img [src]="appConfig.dark ? 'assets/images/placeholders/placeholder-checkoutpages-dark.svg' : 'assets/images/placeholders/placeholder-checkoutpages.svg'" class="block-placeholder" alt="Store Front">
+                    </a>
+                    <div class="flex align-items-start justify-content-between">
+                        <div>
+                            <span class="block-name">Checkout Page</span>
+                            <span class="block-count">1 Blocks</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 md:col-3">
+                    <a [routerLink]="['/ecommerce/orderdetailpage']">
+                        <img [src]="appConfig.dark ? 'assets/images/placeholders/placeholder-orderdetailpages-dark.svg' : 'assets/images/placeholders/placeholder-orderdetailpages.svg'" class="block-placeholder" alt="Store Front">
+                    </a>
+                    <div class="flex align-items-start justify-content-between">
+                        <div>
+                            <span class="block-name">Order Detail Page</span>
+                            <span class="block-count">1 Block</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 md:col-3">
+                    <a [routerLink]="['/ecommerce/orderhistorypage']">
+                        <img [src]="appConfig.dark ? 'assets/images/placeholders/placeholder-orderhistorypages-dark.svg' : 'assets/images/placeholders/placeholder-orderhistorypages.svg'" class="block-placeholder" alt="Store Front">
+                    </a>
+                    <div class="flex align-items-start justify-content-between">
+                        <div>
+                            <span class="block-name">Order History Page</span>
+                            <span class="block-count">1 Blocks</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
